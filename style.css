@@ -259,18 +259,19 @@ section {
 }
 
 .project-message {
-    min-height: 350px;
+    min-height: 430px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    padding: 55px;
 
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
+            90deg,
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.45)
         ),
         url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1800&q=80");
 
@@ -278,7 +279,55 @@ section {
     background-position: center;
 
     color: #ffffff;
-}
+    
+    
+    .project-content {
+        max-width: 650px;
+    }
+
+    .project-content span {
+        display: block;
+        color: #f5b400;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        margin-bottom: 18px;
+    }
+
+    .project-content h3 {
+        font-size: clamp(32px, 5vw, 55px);
+        line-height: 1.05;
+        margin-bottom: 20px;
+    }
+
+    .project-content p {
+        max-width: 600px;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #eeeeee;
+    }
+
+    .project-steps {
+        display: flex;
+        gap: 35px;
+    }
+
+    .project-steps div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .project-steps strong {
+        font-size: 28px;
+        color: #f5b400;
+    }
+
+    .project-steps span {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
 
 .project-message h3 {
     font-size: 40px;
